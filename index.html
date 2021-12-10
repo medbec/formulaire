@@ -7,6 +7,81 @@
     <title>formulaire de contact</title>
 </head>
 <body>
+    <h1>formulaire de contact</h1>
+    <form action="/ma-page-de-traitement" method="post">
+        <p>Bonjour <br> pour nous contacter merci de remplir le formulaire ci dessus avec vos information <br>et nous reviendrons vers vous dans les plus bref delaits</p>
+        <div>
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="user_name" placeholder="Dubois">
+        </div>
+        <div>
+            <label for="lastname">Prenom :</label><br>
+            <input type="text" id="name" name="user_name" placeholder="Julien">
+        </div>
+        <div>
+            <label for="age">Votre age :</label><br>
+            <input type="number" id="age" name="user_date" placeholder="Ex : 26">
+        </div>
+        <div>
+            <label for="sexe">Sexe:</label><br>
+            <input type="text" id="sexe" name="user_sexe" placeholder="homme">
+        </div>
+        <div>
+            <label for="mail">e-mail :</label><br>
+            <input type="email" id="mail" name="user_mail" placeholder="Exemple@email.com">
+        </div>
+        <div>
+            <label for="adresse">Adresse postale :</label><br>
+            <input type="text" id="adresse_p" name="user_adresse" placeholder="24 rue adrese">
+        </div>
+        <div>
+            <label for="code_postale">Code postale :</label><br>
+            <input type="text" id="P_code" name="user_code" placeholder="75000">
+        </div>
+        <div>
+            <label for="ville">ville:</label><br>
+            <input type="text" id="ville" name="user_ville" placeholder="Paris">
+        </div>
+        <div>
+            <label for="metier">Métier exercé :</label><br>
+            <input type="text" id="metier" name="user_metier" placeholder="Ex : Plombier">
+        </div>
+        <div>
+            <label for="nationalité">Nationalité :</label><br>
+            <input type="text" id="nationalité" name="user_nationalité" placeholder="Ex : Francaise">
+        </div>
+        <div>
+            <label for="date">Date de naissance:</label><br>
+            <input type="date" id="date" name="user_date" placeholder="jj/mm/aaaa">
+        </div>
+        <div>
+            <label for="Pays_naissance">Pays de naissance :</label><br>
+            <input type="text" id="P_naissance" name="user_Pnaissance" placeholder="Ex : France">
+        </div>
+        <div>
+            <label for="Number_social">Numéro de sécurité social :</label><br>
+            <input type="text" id="N_social" name="user_Nsocial" placeholder="Ex : 1 99 99 99 999 999 99">
+        </div>
+        <div>
+            <label for="Passeport_number">Numéro du passeport :</label><br>
+            <input type="text" id="N_passeport" name="user_Npasseport" placeholder="Numéro de passeport">
+        </div>
+        <div>
+            <label for="date">Date de délivrance du passeport:</label><br>
+            <input type="date" id="passeport_date" name="user_Pdate" placeholder="jj/mm/aaaa">
+        </div>
+        <div>
+            <label for="date">Date de validité du passeport:</label><br>
+            <input type="date" id="passeport_validité" name="user_Pvalidité" placeholder="jj/mm/aaaa">
+        </div>
+        <div>
+            <label for="msg">Message :</label><br>
+            <textarea id="msg" name="user_message" placeholder="Entrez votre message"></textarea>
+        </div>
+        <div class="button">
+            <br><button type="submit">Envoyer le message</button>
+        </div>
+    </form>
     
 </body>
 </html>
