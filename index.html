@@ -8,23 +8,29 @@
 </head>
 <body>
     <h1>formulaire de contact</h1>
-    <form action="/ma-page-de-traitement" method="post">
-        <p>Bonjour <br> pour nous contacter merci de remplir le formulaire ci dessus avec vos information <br>et nous reviendrons vers vous dans les plus bref delaits</p>
+    <form action="traitement.php" method="post">
+    
+    <p>Bonjour <br>
+        pour nous contacter merci de remplir le formulaire ci dessus avec vos information <br>
+        et nous reviendrons vers vous dans les plus bref delaits
+    </p>
         <div>
             <label for="name">Nom :</label><br>
-            <input type="text" id="name" name="user_name" placeholder="Dubois">
+            <input type="text" id="name" name="user_name" placeholder="Dubois" required>
         </div>
         <div>
             <label for="lastname">Prenom :</label><br>
-            <input type="text" id="name" name="user_name" placeholder="Julien">
+            <input type="text" id="name" name="user_name" placeholder="Julien" required>
         </div>
         <div>
             <label for="age">Votre age :</label><br>
-            <input type="number" id="age" name="user_date" placeholder="Ex : 26">
+            <input type="number" id="age" name="user_date" placeholder="Ex : 26" min="18" max="99" required>
         </div>
         <div>
-            <label for="sexe">Sexe:</label><br>
-            <input type="text" id="sexe" name="user_sexe" placeholder="homme">
+            Sexe :<br />
+                <input type="radio" name="civi" value="Mme" /> Masculin
+                <input type="radio" name="civi" value="Mlle" /> Femenin
+                <input type="radio" name="civi" value="Mr" /> Autres
         </div>
         <div>
             <label for="mail">e-mail :</label><br>
@@ -32,14 +38,14 @@
         </div>
         <div>
             <label for="adresse">Adresse postale :</label><br>
-            <input type="text" id="adresse_p" name="user_adresse" placeholder="24 rue adrese">
+            <input type="text" id="adresse" name="user_adresse" placeholder="99 rue adrese">
         </div>
         <div>
             <label for="code_postale">Code postale :</label><br>
-            <input type="text" id="P_code" name="user_code" placeholder="75000">
+            <input type="number" id="code" name="code_postale" placeholder="75000">
         </div>
         <div>
-            <label for="ville">ville:</label><br>
+            <label for="ville">ville :</label><br>
             <input type="text" id="ville" name="user_ville" placeholder="Paris">
         </div>
         <div>
@@ -76,10 +82,10 @@
         </div>
         <div>
             <label for="msg">Message :</label><br>
-            <textarea id="msg" name="user_message" placeholder="Entrez votre message"></textarea>
+            <textarea id="msg" name="user_message" placeholder="Entrez votre message" cols="50" rows="5"></textarea>
         </div>
         <div class="button">
-            <br><button type="submit">Envoyer le message</button>
+            <br><button type="submit">Envoyer</button>
         </div>
     </form>
     
